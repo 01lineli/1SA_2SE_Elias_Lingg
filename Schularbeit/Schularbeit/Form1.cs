@@ -40,6 +40,11 @@ namespace Schularbeit
         private void fahren_Click(object sender, EventArgs e)
         {
             progressBar1.Value -= Convert.ToInt32(fahrenkm.Text);
+            
+            if (progressBar1.Value <= 10)
+            {
+                MessageBox.Show("Gehen Sie bitte tanken!!");
+            }
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
