@@ -102,6 +102,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(209, 134);
             this.textBox1.TabIndex = 11;
+            this.textBox1.Text = "Marke: \r\nFarbe: \r\nPS: \r\nTankgröße: \r\nVerbrauch: \r\n";
             // 
             // comboBox1
             // 
@@ -214,6 +215,7 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(251, 23);
             this.progressBar1.TabIndex = 11;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // label6
             // 

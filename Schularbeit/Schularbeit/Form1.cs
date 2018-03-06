@@ -23,11 +23,11 @@ namespace Schularbeit
 
         private void erstAuto_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "Marke: " + Marke.Text;
-            textBox1.Text += "Farbe: " + comboBox1.Text;
-            textBox1.Text += "\nPS: " + PS.Text;
-            textBox1.Text += "\nTankgröße: " + Tankgröße.Text;
-            textBox1.Text += "\nVerbrauch: " + Verbrauch.Text;
+            textBox1.Text += Marke.Text;
+            textBox1.Text += comboBox1.Text;
+            textBox1.Text += PS.Text;
+            textBox1.Text += Tankgröße.Text;
+            textBox1.Text += Verbrauch.Text;
 
         }
 
@@ -39,6 +39,11 @@ namespace Schularbeit
         private void fahren_Click(object sender, EventArgs e)
         {
             progressBar1.Value -= Convert.ToInt32(fahrenkm.Text);
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+            progressBar1.MaximumSize = Convert.(Tankgröße.Text);
         }
 
     }
