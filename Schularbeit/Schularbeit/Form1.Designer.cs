@@ -30,6 +30,8 @@
         {
             this.Marke = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.erstAuto = new System.Windows.Forms.Button();
             this.Verbrauch = new System.Windows.Forms.TextBox();
@@ -46,11 +48,11 @@
             this.Tanken = new System.Windows.Forms.Button();
             this.Liter = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.fahrenkm = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.fahren = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.fahrenkm = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +66,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listBox1);
+            this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.erstAuto);
             this.groupBox1.Controls.Add(this.Verbrauch);
@@ -82,6 +84,24 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Neues Auto erstellen";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Location = new System.Drawing.Point(269, 153);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(221, 159);
+            this.groupBox4.TabIndex = 12;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Informationen";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 19);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(209, 134);
+            this.textBox1.TabIndex = 11;
             // 
             // comboBox1
             // 
@@ -101,7 +121,7 @@
             // 
             // erstAuto
             // 
-            this.erstAuto.Location = new System.Drawing.Point(170, 112);
+            this.erstAuto.Location = new System.Drawing.Point(334, 98);
             this.erstAuto.Name = "erstAuto";
             this.erstAuto.Size = new System.Drawing.Size(87, 23);
             this.erstAuto.TabIndex = 10;
@@ -233,21 +253,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Fahren";
             // 
-            // listBox1
+            // fahren
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(275, 164);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(215, 134);
-            this.listBox1.TabIndex = 11;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // fahrenkm
-            // 
-            this.fahrenkm.Location = new System.Drawing.Point(6, 32);
-            this.fahrenkm.Name = "fahrenkm";
-            this.fahrenkm.Size = new System.Drawing.Size(100, 20);
-            this.fahrenkm.TabIndex = 14;
+            this.fahren.Location = new System.Drawing.Point(182, 30);
+            this.fahren.Name = "fahren";
+            this.fahren.Size = new System.Drawing.Size(75, 23);
+            this.fahren.TabIndex = 16;
+            this.fahren.Text = "fahren";
+            this.fahren.UseVisualStyleBackColor = true;
+            this.fahren.Click += new System.EventHandler(this.fahren_Click);
             // 
             // label7
             // 
@@ -258,15 +272,12 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "km";
             // 
-            // fahren
+            // fahrenkm
             // 
-            this.fahren.Location = new System.Drawing.Point(182, 30);
-            this.fahren.Name = "fahren";
-            this.fahren.Size = new System.Drawing.Size(75, 23);
-            this.fahren.TabIndex = 16;
-            this.fahren.Text = "fahren";
-            this.fahren.UseVisualStyleBackColor = true;
-            this.fahren.Click += new System.EventHandler(this.fahren_Click);
+            this.fahrenkm.Location = new System.Drawing.Point(6, 32);
+            this.fahrenkm.Name = "fahrenkm";
+            this.fahrenkm.Size = new System.Drawing.Size(100, 20);
+            this.fahrenkm.TabIndex = 14;
             // 
             // Form1
             // 
@@ -280,6 +291,8 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -308,10 +321,11 @@
         private System.Windows.Forms.Button Tanken;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button fahren;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox fahrenkm;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
