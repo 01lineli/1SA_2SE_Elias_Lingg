@@ -28,6 +28,7 @@ namespace Schularbeit
             textBox1.Text += PS.Text;
             textBox1.Text += Tankgröße.Text;
             textBox1.Text += Verbrauch.Text;
+            progressBar1.Maximum = Convert.ToInt32(Tankgröße.Text);
 
         }
 
@@ -43,7 +44,7 @@ namespace Schularbeit
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
-            progressBar1.MaximumSize = Convert.(Tankgröße.Text);
+            
         }
 
     }
