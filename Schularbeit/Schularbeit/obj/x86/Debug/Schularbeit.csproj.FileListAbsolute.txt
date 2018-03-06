@@ -1,0 +1,8 @@
+H:\GIT\Schularbeit\Schularbeit\bin\Debug\Schularbeit.exe
+H:\GIT\Schularbeit\Schularbeit\bin\Debug\Schularbeit.pdb
+H:\GIT\Schularbeit\Schularbeit\obj\x86\Debug\Schularbeit.csprojResolveAssemblyReference.cache
+H:\GIT\Schularbeit\Schularbeit\obj\x86\Debug\Schularbeit.Form1.resources
+H:\GIT\Schularbeit\Schularbeit\obj\x86\Debug\Schularbeit.Properties.Resources.resources
+H:\GIT\Schularbeit\Schularbeit\obj\x86\Debug\Schularbeit.csproj.GenerateResource.Cache
+H:\GIT\Schularbeit\Schularbeit\obj\x86\Debug\Schularbeit.exe
+H:\GIT\Schularbeit\Schularbeit\obj\x86\Debug\Schularbeit.pdb
